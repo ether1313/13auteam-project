@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+.animate-scroll-up {
+  animation: scrollUp 40s linear infinite;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3DAD9;
+  border-radius: 0.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891b2;
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.05); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.5s infinite ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.animate-shake {
+  animation: shake 0.6s infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* 蓝色固定背景 */
+.holo-blue {
+  background: linear-gradient(
+    135deg,
+    #0088cc 0%,
+    #34aadf 100%
+  );
+}
+
+/* 粉色固定背景 */
+.holo-pink {
+  background: linear-gradient(
+    135deg,
+    #ff64b4 0%,
+    #ffb4dc 100%
+  );
+}
+
+.hud-glow {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 0.75rem; /* 跟 rounded-xl 对齐 */
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #00e5ff, #00ffaa, #00e5ff, #0095ff) border-box;
+  background-size: 300% 100%;
+  animation: borderGlow 6s linear infinite;
+}
+
+@keyframes borderGlow {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+
