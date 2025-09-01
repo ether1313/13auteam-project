@@ -148,19 +148,19 @@ const GamePlatforms: React.FC = () => {
                 <div className="grid grid-cols-3 gap-2 text-center text-sm mb-4">
                   <div>
                     <div className="opacity-80">Register Free</div>
-                    <div className="font-rubik font-bold text-2xl" style={{ color: '#222831' }}>
+                    <div className="font-rubik font-bold text-xl" style={{ color: '#222831' }}>
                       {platform.registerFree}
                     </div>
                   </div>
                   <div>
                     <div className="opacity-80">Bonus</div>
-                    <div className="font-rubik font-bold text-2xl" style={{ color: '#222831' }}>
+                    <div className="font-rubik font-bold text-xl" style={{ color: '#222831' }}>
                       {platform.welcome || platform.welcomeBonus || platform.daily || "-"}
                     </div>
                   </div>
                   <div>
                     <div className="opacity-80">Special</div>
-                    <div className="font-rubik font-bold text-2xl" style={{ color: '#222831' }}>
+                    <div className="font-rubik font-bold text-xl" style={{ color: '#222831' }}>
                       {platform.vipFree || platform.vipBonus || platform.vipPackage || "-"}
                     </div>
                   </div>
