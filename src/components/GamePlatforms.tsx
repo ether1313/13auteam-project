@@ -174,7 +174,7 @@ const GamePlatforms: React.FC = () => {
                             hover:scale-[1.05] transition flex items-center justify-center space-x-2"
                 >
                   <img 
-                    src="/cards cta/bonus-2.webp"
+                    src="/cards cta/3d-dice.webp"
                     alt="CTA Icon" 
                     className="w-7 h-7 drop-shadow-md"
                   />
