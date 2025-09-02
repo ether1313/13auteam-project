@@ -9,7 +9,7 @@ const platforms = [
     registerFree: '$23.33',
     welcome: '100%',
     vipFree: '$1628',
-    url: 'https://thepokies33.com'
+    url: ''
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const platforms = [
     registerFree: '$29.99',
     welcomeBonus: 'Up To $996',
     vipWeekly: '$1999',
-    url: 'https://gday96.com'
+    url: ''
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const platforms = [
     registerFree: '$18',
     daily: '50%',
     sundayVip: 'Free',
-    url: 'https://bbb007.com'
+    url: ''
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const platforms = [
     dailyFree: '$33.33',
     welcome: '100%',
     vipDaily: '$189.99',
-    url: 'https://retro33.com'
+    url: ''
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const platforms = [
     registerFree: '$27.77',
     randomDaily: '$1 - $5',
     refBonus: '$17.77',
-    url: 'https://class777.com'
+    url: ''
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const platforms = [
     vipFree: '$2300',
     weeklyQuest: '$2495.96',
     dailyQuest: '$99.64',
-    url: 'https://enjoy96.com'
+    url: ''
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ const platforms = [
     registerFree: '$50',
     welcome: '200%',
     vipBonus: '$2000',
-    url: 'https://crown9.com'
+    url: ''
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ const platforms = [
     registerFree: '$88',
     welcome: '300%',
     vipPackage: '$5000',
-    url: 'https://royal88.com'
+    url: ''
   }
 ];
 
