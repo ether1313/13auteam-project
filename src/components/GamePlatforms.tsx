@@ -100,20 +100,23 @@ const GamePlatforms: React.FC = () => {
             >
               {/* 上半部分 */}
               <div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
-                <div className="text-left">
+                {/* 左侧：MIN DEPOSIT */}
+                <div className="bg-[#f0f7f7] rounded-md px-3 py-2 shadow-sm text-left">
                   <div className="text-xs font-medium opacity-70">MIN DEPOSIT</div>
                   <div className="text-xl font-extrabold text-gray-900">
                     {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
                   </div>
                 </div>
 
+                {/* 中间 LOGO */}
                 <img 
                   src={platform.logo} 
                   alt="Platform Logo" 
-                  className="h-12 object-contain mx-3 drop-shadow-lg"
+                  className="h-12 object-contain mx-4 drop-shadow-lg"
                 />
 
-                <div className="text-right">
+                {/* 右侧：TOTAL GAMES */}
+                <div className="bg-[#f0f7f7] rounded-md px-3 py-2 shadow-sm text-right">
                   <div className="text-xs font-medium opacity-70">TOTAL GAMES</div>
                   <div className="text-xl font-extrabold text-gray-900">
                     {platform.totalGames}
