@@ -58,7 +58,7 @@ export default function Hero() {
         <div className="flex justify-center gap-4 flex-nowrap">
           {/* Telegram 1 */}
           <a
-            href="https://t.me/YourTelegramOne"
+            href="https://t.me/addlist/PbLUCPdgcG0yZWY9"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center space-x-2 
@@ -74,7 +74,7 @@ export default function Hero() {
         
           {/* Telegram 2 */}
           <a
-            href="https://t.me/YourTelegramTwo"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center space-x-2 
