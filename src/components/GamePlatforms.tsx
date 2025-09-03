@@ -17,7 +17,7 @@ const platforms = [
     minDeposit: '10',
     totalGames: '5000+',
     registerFree: '$29.99',
-    welcomeBonus: 'Up To $996',
+    welcomeBonus: '$996',
     vipWeekly: '$1999',
     url: ''
   },
@@ -119,7 +119,7 @@ const GamePlatforms: React.FC = () => {
 
               {/* 下半部分 - 白色背景 */}
               <div className="bg-white p-4 text-[#222831]">
-                <div className="grid grid-cols-3 divide-x-[2px] divide-[#677161]  text-center text-sm mb-4">
+                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce]  text-center text-sm mb-4">
                   <div className="px-2">
                     <div className="opacity-70">Register Free</div>
                     <div className="font-bold text-xl">{platform.registerFree || "-"}</div>
