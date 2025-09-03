@@ -22,7 +22,7 @@ export default function Hero() {
         {/* 大标题 */}
         <h1
           className="font-extrabold tracking-wide mb-1 
-                     text-[#546460]
+                     text-[#22322c]
                      text-[clamp(1rem,5vw,2.5rem)] text-center
                      whitespace-nowrap"
           style={{ fontFamily: "'Bungee', cursive" }}
