@@ -98,11 +98,13 @@ const GamePlatforms: React.FC = () => {
                          transition-all duration-500 
                          hover:scale-[1.03]"
             >
-              {/* 上半部分 - 纯青色背景 */}
+              {/* 上半部分 */}
               <div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
                 <div className="text-left">
-                  <div className="text-xs opacity-90">MIN DEPOSIT</div>
-                  <div className="text-lg font-bold">{platform.minDeposit} <span className="text-xs">AUD</span></div>
+                  <div className="text-xs font-medium opacity-70">MIN DEPOSIT</div>
+                  <div className="text-xl font-extrabold text-gray-900">
+                    {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
+                  </div>
                 </div>
 
                 <img 
@@ -112,33 +114,37 @@ const GamePlatforms: React.FC = () => {
                 />
 
                 <div className="text-right">
-                  <div className="text-xs opacity-90">TOTAL GAMES</div>
-                  <div className="text-lg font-bold">{platform.totalGames}</div>
+                  <div className="text-xs font-medium opacity-70">TOTAL GAMES</div>
+                  <div className="text-xl font-extrabold text-gray-900">
+                    {platform.totalGames}
+                  </div>
                 </div>
               </div>
 
-              {/* 下半部分 - 白色背景 */}
+              {/* 下半部分 */}
               <div className="bg-white p-4 text-[#222831]">
-                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce]  text-center text-sm mb-4">
+                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-4">
                   <div className="px-2">
-                    <div className="opacity-70">Register Free</div>
-                    <div className="font-bold text-xl">{platform.registerFree || "-"}</div>
+                    <div className="text-xs font-medium opacity-70">Register Free</div>
+                    <div className="text-xl font-extrabold text-gray-900">
+                      {platform.registerFree || "-"}
+                    </div>
                   </div>
                   <div className="px-2">
-                    <div className="opacity-70">Bonus</div>
-                    <div className="font-bold text-xl">
+                    <div className="text-xs font-medium opacity-70">Bonus</div>
+                    <div className="text-xl font-extrabold text-gray-900">
                       {platform.welcome || platform.welcomeBonus || platform.daily || "-"}
                     </div>
                   </div>
                   <div className="px-2">
-                    <div className="opacity-70">Special</div>
-                    <div className="font-bold text-xl">
+                    <div className="text-xs font-medium opacity-70">Special</div>
+                    <div className="text-xl font-extrabold text-gray-900">
                       {platform.vipFree || platform.vipBonus || platform.vipPackage || "-"}
                     </div>
                   </div>
                 </div>
 
-                {/* CTA Button */}
+                {/* CTA Button - 保持不动 */}
                 <button 
                   onClick={() => window.open(platform.url, '_blank')}
                   className="w-full bg-[#78e63d] 
