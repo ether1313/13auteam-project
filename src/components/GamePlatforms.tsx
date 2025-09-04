@@ -105,27 +105,43 @@ const GamePlatforms: React.FC = () => {
                          hover:scale-[1.03]"
             >
               {/* 上半部分 */}
-              <div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
-                <div className="text-left">
-                  <div className="text-xs font-medium opacity-70">MIN DEPOSIT</div>
-                  <div className="text-xl font-extrabold text-gray-900">
-                    {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
-                  </div>
-                </div>
+<div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
+  {/* 左边 MIN DEPOSIT */}
+  <div className="text-left">
+    {/* 桌面显示: MIN DEPOSIT 一行，手机显示: MIN / DEPOSIT 两行 */}
+    <div className="text-xs font-medium opacity-70">
+      <span className="hidden sm:inline">MIN DEPOSIT</span>
+      <span className="block sm:hidden">MIN</span>
+      <span className="block sm:hidden">DEPOSIT</span>
+    </div>
+    {/* 数值 */}
+    <div className="text-xl font-extrabold text-gray-900">
+      {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
+    </div>
+  </div>
 
-                <img 
-                  src={platform.logo} 
-                  alt="Platform Logo" 
-                  className="h-12 object-contain mx-3 drop-shadow-lg"
-                />
+  {/* LOGO */}
+  <img 
+    src={platform.logo} 
+    alt="Platform Logo" 
+    className="h-12 object-contain mx-3 drop-shadow-lg"
+  />
 
-                <div className="text-right">
-                  <div className="text-xs font-medium opacity-70">TOTAL GAMES</div>
-                  <div className="text-xl font-extrabold text-gray-900">
-                    {platform.totalGames}
-                  </div>
-                </div>
-              </div>
+  {/* 右边 TOTAL GAMES */}
+  <div className="text-right">
+    {/* 桌面显示: TOTAL GAMES 一行，手机显示: TOTAL / GAMES 两行 */}
+    <div className="text-xs font-medium opacity-70">
+      <span className="hidden sm:inline">TOTAL GAMES</span>
+      <span className="block sm:hidden">TOTAL</span>
+      <span className="block sm:hidden">GAMES</span>
+    </div>
+    {/* 数值 */}
+    <div className="text-xl font-extrabold text-gray-900">
+      {platform.totalGames}
+    </div>
+  </div>
+</div>
+
 
               {/* 下半部分 */}
               <div className="bg-white p-4 text-[#222831]">
