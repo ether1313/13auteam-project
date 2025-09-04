@@ -9,7 +9,7 @@ export default function Hero() {
       {/* 背景国旗 */}
       <div className="absolute inset-0">
         <img 
-          src="/ausflag.webp"   // 🇦🇺 把国旗图片放到 public 文件夹
+          src="/ausflag.webp"
           alt="Australia Flag Background"
           className="w-full h-full object-cover scale-110"
         />
