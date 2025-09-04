@@ -4,7 +4,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 export default function Hero() {
   return (
     <section 
-      className="relative max-w-4xl mx-auto px-4 text-center py-5 rounded-xl overflow-hidden"
+      className="relative max-w-7xl mx-auto px-4 text-center py-5 rounded-xl overflow-hidden"
     >
       {/* 背景国旗 */}
       <div className="absolute inset-0">
@@ -45,7 +45,7 @@ export default function Hero() {
         <img
           src="/banner03.webp"
           alt="13auteam Certification"
-          className="mx-auto mb-4 w-full max-w-[1600px] h-auto"
+          className="mx-auto mb-4 w-full max-w-[1400px] h-auto"
         />
 
 
