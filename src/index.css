@@ -82,7 +82,7 @@ html {
   scrollbar-width: none;     /* Firefox */
 }
 
-/* 蓝色固定背景 */
+/* telegram蓝色固定背景 */
 .holo-blue {
   background: linear-gradient(
     135deg,
@@ -91,7 +91,7 @@ html {
   );
 }
 
-/* 粉色固定背景 */
+/* telegram粉色固定背景 */
 .holo-pink {
   background: linear-gradient(
     135deg,
@@ -100,6 +100,7 @@ html {
   );
 }
 
+/* since2010的hud框框 */
 .hud-glow {
   position: relative;
   border: 2px solid transparent;
