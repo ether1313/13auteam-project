@@ -45,7 +45,7 @@ export default function Hero() {
         <img
           src="/banner03.webp"
           alt="13auteam Certification"
-          className="mx-auto mb-4 w-full max-w-[1400px] h-auto"
+          className="mx-auto mb-4 w-full max-w-[1600px] h-auto"
         />
 
 
