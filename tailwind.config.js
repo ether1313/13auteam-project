@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        rubik: ['"Rubik"', 'sans-serif'], // ✅ Rubik 字体
+        rubik: ['"Rubik"', 'sans-serif'], 
+        piedra: ['"Piedra"', 'cursive'],
       },
     },
   },

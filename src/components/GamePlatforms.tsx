@@ -105,62 +105,61 @@ const GamePlatforms: React.FC = () => {
                          hover:scale-[1.03]"
             >
               {/* 上半部分 */}
-<div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
-  {/* 左边 MIN DEPOSIT */}
-  <div className="text-left">
-    {/* 桌面显示: MIN DEPOSIT 一行，手机显示: MIN / DEPOSIT 两行 */}
-    <div className="text-xs font-medium opacity-70">
-      <span className="hidden sm:inline">MIN DEPOSIT</span>
-      <span className="block sm:hidden">MIN</span>
-      <span className="block sm:hidden">DEPOSIT</span>
-    </div>
-    {/* 数值 */}
-    <div className="text-xl font-extrabold text-gray-900">
-      {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
-    </div>
-  </div>
+              <div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
+                {/* 左边 MIN DEPOSIT */}
+                <div className="text-left">
+                  {/* 桌面显示: MIN DEPOSIT 一行，手机显示: MIN / DEPOSIT 两行 */}
+                  <div className="text-xs font-medium opacity-70">
+                    <span className="hidden sm:inline">MIN DEPOSIT</span>
+                    <span className="block sm:hidden">MIN</span>
+                    <span className="block sm:hidden">DEPOSIT</span>
+                  </div>
+                  {/* 数值 */}
+                  <div className="text-xl font-piedra text-[#343434]">
+                    {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
+                  </div>
+                </div>
 
-  {/* LOGO */}
-  <img 
-    src={platform.logo} 
-    alt="Platform Logo" 
-    className="h-12 object-contain mx-3 drop-shadow-lg"
-  />
+                {/* LOGO */}
+                <img 
+                  src={platform.logo} 
+                  alt="Platform Logo" 
+                  className="h-12 object-contain mx-3 drop-shadow-lg"
+                />
 
-  {/* 右边 TOTAL GAMES */}
-  <div className="text-right">
-    {/* 桌面显示: TOTAL GAMES 一行，手机显示: TOTAL / GAMES 两行 */}
-    <div className="text-xs font-medium opacity-70">
-      <span className="hidden sm:inline">TOTAL GAMES</span>
-      <span className="block sm:hidden">TOTAL</span>
-      <span className="block sm:hidden">GAMES</span>
-    </div>
-    {/* 数值 */}
-    <div className="text-xl font-extrabold text-gray-900">
-      {platform.totalGames}
-    </div>
-  </div>
-</div>
-
+                {/* 右边 TOTAL GAMES */}
+                <div className="text-right">
+                  {/* 桌面显示: TOTAL GAMES 一行，手机显示: TOTAL / GAMES 两行 */}
+                  <div className="text-xs font-medium opacity-70">
+                    <span className="hidden sm:inline">TOTAL GAMES</span>
+                    <span className="block sm:hidden">TOTAL</span>
+                    <span className="block sm:hidden">GAMES</span>
+                  </div>
+                  {/* 数值 */}
+                  <div className="text-xl font-piedra text-[#343434]">
+                    {platform.totalGames}
+                  </div>
+                </div>
+              </div>
 
               {/* 下半部分 */}
               <div className="bg-white p-4 text-[#222831]">
                 <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-4">
                   <div className="px-2">
                     <div className="text-xs font-medium opacity-70">Register Free</div>
-                    <div className="text-xl font-extrabold text-gray-900">
+                    <div className="text-xl font-piedra text-[#343434]">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
                   <div className="px-2">
                     <div className="text-xs font-medium opacity-70">Bonus</div>
-                    <div className="text-xl font-extrabold text-gray-900">
+                    <div className="text-xl font-piedra text-[#343434]">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
                   <div className="px-2">
                     <div className="text-xs font-medium opacity-70">Special</div>
-                    <div className="text-xl font-extrabold text-gray-900">
+                    <div className="text-xl font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
