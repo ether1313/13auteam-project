@@ -14,73 +14,78 @@ const reviews = [
 
 const PlayerReviews: React.FC = () => {
   return (
-    <section className="py-5 bg-gradient-to-br from-cyan-50 to-white overflow-hidden">
+    <section className="py-10 bg-gradient-to-br from-cyan-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-            <h2
-              className="font-bold text-gray-900 mb-4 whitespace-nowrap 
-                         text-[clamp(1.7rem,5vw,2.5rem)]"
-            >
-              Prestige Testimonials
-            </h2>
-          </div>
-
-
-        <div className="relative h-96 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white z-10 pointer-events-none"></div>
+        
+        {/* 整个 Testimonials 卡片 */}
+        <div className="bg-white rounded-2xl shadow-xl border border-cyan-100 p-8">
           
-          <div className="animate-scroll-up space-y-6">
-            {/* First set */}
-            {reviews.map((review) => (
-              <div 
-                key={review.id}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-cyan-100 mx-4"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h4 className="font-bold text-gray-900">{review.name}</h4>
-                    <p className="text-sm text-cyan-600">{review.platform} Player</p>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        size={16} 
-                        className={i < review.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{review.text}</p>
-              </div>
-            ))}
+          {/* 标题 */}
+          <h2
+            className="font-bold text-gray-900 mb-8 text-center
+                       text-[clamp(1.5rem,5vw,2.2rem)]"
+          >
+            Prestige Testimonials
+          </h2>
+
+          {/* 滚动留言列表 */}
+          <div className="relative h-96 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white z-10 pointer-events-none"></div>
             
-            {/* Second set for infinite scroll */}
-            {reviews.map((review) => (
-              <div 
-                key={`${review.id}-duplicate`}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-cyan-100 mx-4"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h4 className="font-bold text-gray-900">{review.name}</h4>
-                    <p className="text-sm text-cyan-600">{review.platform} Player</p>
+            <div className="animate-scroll-up space-y-6">
+              {/* 第一轮留言 */}
+              {reviews.map((review) => (
+                <div 
+                  key={review.id}
+                  className="bg-white rounded-xl p-6 shadow-md border border-gray-100"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h4 className="font-bold text-gray-900">{review.name}</h4>
+                      <p className="text-sm text-cyan-600">{review.platform} Player</p>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          size={16} 
+                          className={i < review.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}
+                        />
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        size={16} 
-                        className={i < review.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}
-                      />
-                    ))}
-                  </div>
+                  <p className="text-gray-700 leading-relaxed">{review.text}</p>
                 </div>
-                <p className="text-gray-700 leading-relaxed">{review.text}</p>
-              </div>
-            ))}
+              ))}
+
+              {/* 第二轮重复，用于无限滚动 */}
+              {reviews.map((review) => (
+                <div 
+                  key={`${review.id}-duplicate`}
+                  className="bg-white rounded-xl p-6 shadow-md border border-gray-100"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h4 className="font-bold text-gray-900">{review.name}</h4>
+                      <p className="text-sm text-cyan-600">{review.platform} Player</p>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          size={16} 
+                          className={i < review.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">{review.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
