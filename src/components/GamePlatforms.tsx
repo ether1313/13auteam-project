@@ -139,25 +139,32 @@ const GamePlatforms: React.FC = () => {
               {/* 下半部分 */}
               <div className="bg-white p-6 text-[#222831] w-full">
                 <div className="grid grid-cols-3 divide-x-[1px] divide-[#d1d6ce] text-center mb-4 w-full">
-                  <div className="px-2 w-full">
-                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">Register Free</div>
-                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
+                  <div className="px-2 w-full whitespace-nowrap">
+                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70 whitespace-nowrap">
+                      Register Free
+                    </div>
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434] whitespace-nowrap">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
-                  <div className="px-2 w-full">
-                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">Bonus</div>
-                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
+                  <div className="px-2 w-full whitespace-nowrap">
+                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70 whitespace-nowrap">
+                      Bonus
+                    </div>
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434] whitespace-nowrap">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
-                  <div className="px-2 w-full">
-                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">VIP Special</div>
-                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
+                  <div className="px-2 w-full whitespace-nowrap">
+                    <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70 whitespace-nowrap">
+                      VIP Special
+                    </div>
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434] whitespace-nowrap">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
                 </div>
+
 
 
                 {/* CTA Button */}
