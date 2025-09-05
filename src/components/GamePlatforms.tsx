@@ -16,67 +16,67 @@ type Platform = {
 const platforms: Platform[] = [
   {
     id: 1,
-    logo: '/games logo/ipay logo.webp',
-    minDeposit: '10',
-    totalGames: '5000+',
-    registerFree: '$23.33',
-    welcomeBonus: '100%',
-    vipFree: '$1628',
-    url: ''
+    logo: '/games logo/.webp',
+    minDeposit: '5',
+    totalGames: '4000+',
+    registerFree: '$288',
+    welcomeBonus: '70%',
+    vipFree: '',
+    url: 'https://bugatti13.vip'
   },
   {
     id: 2,
-    logo: '/games logo/kingbet logo.webp',
+    logo: '/games logo/chanel9.webp',
     minDeposit: '10',
     totalGames: '5000+',
-    registerFree: '$29.99',
-    welcomeBonus: '$996',
-    vipFree: '$1999',
-    url: ''
+    registerFree: '$399.99',
+    welcomeBonus: 'BNG 50%',
+    vipFree: '',
+    url: 'https://chanel9.net/'
   },
   {
     id: 3,
-    logo: '/games logo/mario logo.webp',
-    minDeposit: '15',
+    logo: '/games logo/.webp',
+    minDeposit: '5',
     totalGames: '5000+',
-    registerFree: '$18',
-    welcomeBonus: '50%',
-    vipFree: 'Free',
-    url: ''
+    registerFree: '$286.66',
+    welcomeBonus: 'JILI 50%',
+    vipFree: '',
+    url: 'https://hermes13.net/'
   },
   {
     id: 4,
-    logo: '/games logo/me99 logo.webp',
-    minDeposit: '5',
-    totalGames: '4000+',
-    registerFree: '$33.33',
-    welcomeBonus: '100%',
-    vipFree: '$189.99',
-    url: ''
+    logo: '/games logo/louis13.webp',
+    minDeposit: '10',
+    totalGames: '5000+',
+    registerFree: '$399.99',
+    welcomeBonus: 'JILI 80%',
+    vipFree: '',
+    url: 'https://louis13.co/'
   },
   {
     id: 5,
-    logo: '/games logo/queen13 logo.webp',
-    minDeposit: '20',
-    totalGames: '5500+',
-    registerFree: '$45',
-    welcomeBonus: '150%',
-    vipFree: '$2500',
-    url: ''
+    logo: '/games logo/.webp',
+    minDeposit: '8',
+    totalGames: '5000+',
+    registerFree: '$400',
+    welcomeBonus: 'JILI 50%',
+    vipFree: '',
+    url: 'https://audpay.vip/'
   },
   {
     id: 6,
-    logo: '/games logo/epay9 logo.webp',
-    minDeposit: '25',
-    totalGames: '6000+',
-    registerFree: '$60',
-    welcomeBonus: '200%',
+    logo: '/games logo/prada9.webp',
+    minDeposit: '8',
+    totalGames: '5000+',
+    registerFree: '$399',
+    welcomeBonus: 'BNG 80%',
     vipFree: '$3000',
-    url: ''
+    url: 'https://prada9.vip/'
   }
 ];
 
-// 打乱数组函数 (Fisher-Yates shuffle)，使用泛型
+// 打乱数组函数 (Fisher-Yates shuffle)
 const shuffleArray = <T,>(array: T[]): T[] => {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -87,13 +87,12 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 };
 
 const GamePlatforms: React.FC = () => {
-  // 每次渲染时随机顺序
   const shuffledPlatforms = useMemo(() => shuffleArray<Platform>(platforms), []);
 
   return (
     <section id="platforms" className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="max-w-7xl mx-auto px-[clamp(0.8rem,2vw,2rem)] py-[clamp(1rem,3vw,3rem)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-[clamp(1rem,2.5vw,2rem)] w-full">
           {shuffledPlatforms.map((platform) => (
             <div 
               key={platform.id}
@@ -102,64 +101,69 @@ const GamePlatforms: React.FC = () => {
                          shadow-[0_0_25px_rgba(0,0,0,0.2)] 
                          hover:shadow-[0_0_40px_rgba(0,0,0,0.35)] 
                          transition-all duration-500 
-                         hover:scale-[1.03]"
+                         hover:scale-[1.03] 
+                         w-full"
             >
               {/* 上半部分 */}
-              <div className="bg-[#e4eded] text-black p-4 flex items-center justify-between">
+              <div className="bg-[#e4eded] text-black 
+                                py-[clamp(0.3rem,1vw,0.75rem)] 
+                                px-[clamp(0.75rem,2vw,1.5rem)]
+                                grid grid-cols-3 sm:grid-cols-[1fr_2fr_1fr] 
+                                items-center w-full">
                 {/* 左边 MIN DEPOSIT */}
-                <div className="text-left">
-                  {/* 桌面显示: MIN DEPOSIT 一行，手机显示: MIN / DEPOSIT 两行 */}
-                  <div className="text-xs font-medium opacity-70">
+                <div className="w-full text-left">
+                  <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">
                     <span className="hidden sm:inline">MIN DEPOSIT</span>
                     <span className="block sm:hidden">MIN</span>
                     <span className="block sm:hidden">DEPOSIT</span>
                   </div>
-                  {/* 数值 */}
-                  <div className="text-xl font-piedra text-[#343434]">
-                    {platform.minDeposit} <span className="text-sm font-bold">AUD</span>
+                  <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
+                    {platform.minDeposit} <span className="text-[clamp(0.6rem,1.5vw,0.9rem)] font-bold">AUD</span>
                   </div>
                 </div>
 
-                {/* LOGO */}
-                <img 
-                  src={platform.logo} 
-                  alt="Platform Logo" 
-                  className="h-12 object-contain mx-3 drop-shadow-lg"
-                />
+                {/* 中间 LOGO */}
+                <div className="flex justify-center items-center w-full">
+                  <img 
+                    src={platform.logo} 
+                    alt="Platform Logo" 
+                    className="w-full max-w-[clamp(100px,20vw,400px)] 
+                              h-[clamp(40px,8vw,80px)] 
+                              object-contain drop-shadow-lg"
+                  />
+                </div>
 
                 {/* 右边 TOTAL GAMES */}
-                <div className="text-right">
-                  {/* 桌面显示: TOTAL GAMES 一行，手机显示: TOTAL / GAMES 两行 */}
-                  <div className="text-xs font-medium opacity-70">
+                <div className="w-full text-right">
+                  <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">
                     <span className="hidden sm:inline">TOTAL GAMES</span>
                     <span className="block sm:hidden">TOTAL</span>
                     <span className="block sm:hidden">GAMES</span>
                   </div>
-                  {/* 数值 */}
-                  <div className="text-xl font-piedra text-[#343434]">
+                  <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
                     {platform.totalGames}
                   </div>
                 </div>
               </div>
 
               {/* 下半部分 */}
-              <div className="bg-white p-4 text-[#222831]">
-                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-4">
-                  <div className="px-2">
-                    <div className="text-xs font-medium opacity-70">Register Free</div>
-                    <div className="text-xl font-piedra text-[#343434]">
+              <div className="bg-white p-[clamp(0.75rem,2vw,1.5rem)] text-[#222831] w-full">
+                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-[clamp(0.5rem,1.5vw,1rem)] w-full">
+                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
+                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Register Free</div>
+                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
-                  <div className="px-2">
-                    <div className="text-xs font-medium opacity-70">Bonus</div>
-                    <div className="text-xl font-piedra text-[#343434]">
+                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
+                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Bonus</div>
+                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
-                  <div className="px-2">
-                    <div className="text-xs font-medium opacity-70">Special</div>
-                    <div className="text-xl font-piedra text-[#343434]">
+                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
+                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Special</div>
+                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
@@ -169,16 +173,18 @@ const GamePlatforms: React.FC = () => {
                 <button 
                   onClick={() => window.open(platform.url, '_blank')}
                   className="w-full bg-[#78e63d] 
-                            text-white py-2 rounded-lg font-extrabold text-lg 
+                            text-white py-[clamp(0.5rem,1vw,0.75rem)] 
+                            rounded-lg font-extrabold 
+                            text-[clamp(0.9rem,2vw,1.2rem)] 
                             shadow-md hover:shadow-lg 
                             hover:bg-[#4bb352]
                             transition-all duration-300 
-                            flex items-center justify-center space-x-2"
+                            flex items-center justify-center space-x-[clamp(0.25rem,1vw,0.75rem)]"
                 >
                   <img 
                     src="/cards cta/3d-dice.webp"
                     alt="CTA Icon" 
-                    className="w-6 h-6 drop-shadow-md"
+                    className="w-[clamp(18px,3vw,28px)] h-[clamp(18px,3vw,28px)] drop-shadow-md"
                   />
                   <span>Claim Now</span>
                 </button>
