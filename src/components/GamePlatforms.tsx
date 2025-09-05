@@ -175,9 +175,9 @@ const GamePlatforms: React.FC = () => {
                 <button 
                   onClick={() => window.open(platform.url, '_blank')}
                   className="w-full bg-[#78e63d] 
-                            text-white py-1.5 sm:py-2 lg:py-2.5
+                            text-white py-2 sm:py-2.5 lg:py-3
                             rounded-lg font-extrabold 
-                            text-[14px] sm:text-[15px] lg:text-[16px] 
+                            text-[16px] sm:text-[18px] lg:text-[20px] 
                             shadow-md hover:shadow-lg 
                             hover:bg-[#4bb352]
                             transition-all duration-300 
@@ -186,10 +186,11 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src="/cards cta/3d-dice.webp"
                     alt="CTA Icon" 
-                    className="w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] lg:w-[22px] lg:h-[22px] drop-shadow-md"
+                    className="w-[22px] h-[22px] sm:w-[24px] sm:h-[24px] lg:w-[26px] lg:h-[26px] drop-shadow-md"
                   />
                   <span>Claim Now</span>
                 </button>
+
               </div>
             </div>
           ))}
