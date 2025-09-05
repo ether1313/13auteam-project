@@ -111,7 +111,7 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src={platform.logo} 
                     alt="Platform Logo" 
-                    className="w-[120px] h-[40px] sm:w-[160px] sm:h-[50px] lg:w-[200px] lg:h-[60px] object-contain drop-shadow-lg"
+                    className="w-[150px] h-[50px] sm:w-[200px] sm:h-[65px] lg:w-[240px] lg:h-[80px] object-contain drop-shadow-lg"
                   />
                 </div>
 
@@ -131,7 +131,7 @@ const GamePlatforms: React.FC = () => {
                   </div>
 
                   {/* TOTAL GAMES */}
-                  <div className="pl-3 text-right">
+                  <div className="pl-3 text-right pr-3">
                     <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
                       TOTAL GAMES
                     </div>
