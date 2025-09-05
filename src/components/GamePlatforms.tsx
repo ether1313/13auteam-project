@@ -141,19 +141,19 @@ const GamePlatforms: React.FC = () => {
                 <div className="grid grid-cols-3 divide-x-[1px] divide-[#d1d6ce] text-center mb-4 w-full">
                   <div className="px-2 w-full">
                     <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">Register Free</div>
-                    <div className="text-[18px] sm:text-[23px] lg:text-[26px] font-piedra text-[#343434]">
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
                   <div className="px-2 w-full">
                     <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">Bonus</div>
-                    <div className="text-[18px] sm:text-[23px] lg:text-[26px] font-piedra text-[#343434]">
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
                   <div className="px-2 w-full">
                     <div className="text-[11px] sm:text-[12px] lg:text-[13px] font-medium opacity-70">VIP Special</div>
-                    <div className="text-[18px] sm:text-[23px] lg:text-[26px] font-piedra text-[#343434]">
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
