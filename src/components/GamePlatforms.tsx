@@ -108,11 +108,11 @@ const GamePlatforms: React.FC = () => {
               <div className="bg-[#f0f1f1] text-black py-2 px-5 grid grid-cols-3 items-center w-full">
                 {/* 左边 MIN DEPOSIT */}
                 <div className="w-full text-left">
-                  <div className="text-[12px] font-medium opacity-70">
+                  <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
                     MIN DEPOSIT
                   </div>
-                  <div className="text-[22px] font-piedra text-[#343434]">
-                    {platform.minDeposit} <span className="text-[14px] font-bold">AUD</span>
+                  <div className="text-[18px] sm:text-[20px] lg:text-[22px] font-piedra text-[#343434]">
+                    {platform.minDeposit} <span className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold">AUD</span>
                   </div>
                 </div>
 
@@ -121,16 +121,16 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src={platform.logo} 
                     alt="Platform Logo" 
-                    className="w-[200px] h-[60px] object-contain drop-shadow-lg"
+                    className="w-[120px] h-[40px] sm:w-[160px] sm:h-[50px] lg:w-[200px] lg:h-[60px] object-contain drop-shadow-lg"
                   />
                 </div>
 
                 {/* 右边 TOTAL GAMES */}
                 <div className="w-full text-right">
-                  <div className="text-[12px] font-medium opacity-70">
+                  <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
                     TOTAL GAMES
                   </div>
-                  <div className="text-[22px] font-piedra text-[#343434]">
+                  <div className="text-[18px] sm:text-[20px] lg:text-[22px] font-piedra text-[#343434]">
                     {platform.totalGames}
                   </div>
                 </div>
@@ -140,20 +140,20 @@ const GamePlatforms: React.FC = () => {
               <div className="bg-white p-6 text-[#222831] w-full">
                 <div className="grid grid-cols-3 divide-x-[1px] divide-[#d1d6ce] text-center mb-4 w-full">
                   <div className="px-2 w-full">
-                    <div className="text-[12px] font-medium opacity-70">Register Free</div>
-                    <div className="text-[20px] font-piedra text-[#343434]">
+                    <div className="text-[12px] sm:text-[13px] lg:text-[14px] font-medium opacity-70">Register Free</div>
+                    <div className="text-[18px] sm:text-[22px] lg:text-[24px] font-piedra text-[#343434]">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
                   <div className="px-2 w-full">
-                    <div className="text-[12px] font-medium opacity-70">Bonus</div>
-                    <div className="text-[20px] font-piedra text-[#343434]">
+                    <div className="text-[12px] sm:text-[13px] lg:text-[14px] font-medium opacity-70">Bonus</div>
+                    <div className="text-[18px] sm:text-[22px] lg:text-[24px] font-piedra text-[#343434]">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
                   <div className="px-2 w-full">
-                    <div className="text-[12px] font-medium opacity-70">VIP Special</div>
-                    <div className="text-[20px] font-piedra text-[#343434]">
+                    <div className="text-[12px] sm:text-[13px] lg:text-[14px] font-medium opacity-70">VIP Special</div>
+                    <div className="text-[18px] sm:text-[22px] lg:text-[24px] font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
@@ -163,9 +163,9 @@ const GamePlatforms: React.FC = () => {
                 <button 
                   onClick={() => window.open(platform.url, '_blank')}
                   className="w-full bg-[#78e63d] 
-                            text-white py-3 
+                            text-white py-2 sm:py-3 lg:py-4
                             rounded-lg font-extrabold 
-                            text-[18px] 
+                            text-[16px] sm:text-[18px] lg:text-[20px] 
                             shadow-md hover:shadow-lg 
                             hover:bg-[#4bb352]
                             transition-all duration-300 
@@ -174,7 +174,7 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src="/cards cta/3d-dice.webp"
                     alt="CTA Icon" 
-                    className="w-[28px] h-[28px] drop-shadow-md"
+                    className="w-[22px] h-[22px] sm:w-[26px] sm:h-[26px] lg:w-[28px] lg:h-[28px] drop-shadow-md"
                   />
                   <span>Claim Now</span>
                 </button>
