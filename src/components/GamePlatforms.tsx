@@ -91,8 +91,8 @@ const GamePlatforms: React.FC = () => {
 
   return (
     <section id="platforms" className="bg-white">
-      <div className="max-w-7xl mx-auto px-[clamp(0.8rem,2vw,2rem)] py-[clamp(1rem,3vw,3rem)]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-[clamp(1rem,2.5vw,2rem)] w-full">
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
           {shuffledPlatforms.map((platform) => (
             <div 
               key={platform.id}
@@ -105,20 +105,14 @@ const GamePlatforms: React.FC = () => {
                          w-full"
             >
               {/* 上半部分 */}
-              <div className="bg-[#e4eded] text-black 
-                                py-[clamp(0.3rem,1vw,0.75rem)] 
-                                px-[clamp(0.75rem,2vw,1.5rem)]
-                                grid grid-cols-3 sm:grid-cols-[1fr_2fr_1fr] 
-                                items-center w-full">
+              <div className="bg-[#e4eded] text-black py-2 px-5 grid grid-cols-3 items-center w-full">
                 {/* 左边 MIN DEPOSIT */}
                 <div className="w-full text-left">
-                  <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">
-                    <span className="hidden sm:inline">MIN DEPOSIT</span>
-                    <span className="block sm:hidden">MIN</span>
-                    <span className="block sm:hidden">DEPOSIT</span>
+                  <div className="text-[14px] font-medium opacity-70">
+                    MIN DEPOSIT
                   </div>
-                  <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
-                    {platform.minDeposit} <span className="text-[clamp(0.6rem,1.5vw,0.9rem)] font-bold">AUD</span>
+                  <div className="text-[24px] font-piedra text-[#343434]">
+                    {platform.minDeposit} <span className="text-[14px] font-bold">AUD</span>
                   </div>
                 </div>
 
@@ -127,43 +121,39 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src={platform.logo} 
                     alt="Platform Logo" 
-                    className="w-full max-w-[clamp(100px,20vw,400px)] 
-                              h-[clamp(40px,8vw,80px)] 
-                              object-contain drop-shadow-lg"
+                    className="w-[200px] h-[60px] object-contain drop-shadow-lg"
                   />
                 </div>
 
                 {/* 右边 TOTAL GAMES */}
                 <div className="w-full text-right">
-                  <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">
-                    <span className="hidden sm:inline">TOTAL GAMES</span>
-                    <span className="block sm:hidden">TOTAL</span>
-                    <span className="block sm:hidden">GAMES</span>
+                  <div className="text-[14px] font-medium opacity-70">
+                    TOTAL GAMES
                   </div>
-                  <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
+                  <div className="text-[24px] font-piedra text-[#343434]">
                     {platform.totalGames}
                   </div>
                 </div>
               </div>
 
               {/* 下半部分 */}
-              <div className="bg-white p-[clamp(0.75rem,2vw,1.5rem)] text-[#222831] w-full">
-                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-[clamp(0.5rem,1.5vw,1rem)] w-full">
-                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
-                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Register Free</div>
-                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
+              <div className="bg-white p-6 text-[#222831] w-full">
+                <div className="grid grid-cols-3 divide-x-[2px] divide-[#d1d6ce] text-center mb-4 w-full">
+                  <div className="px-2 w-full">
+                    <div className="text-[16px] font-medium opacity-70">Register Free</div>
+                    <div className="text-[22px] font-piedra text-[#343434]">
                       {platform.registerFree || "-"}
                     </div>
                   </div>
-                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
-                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Bonus</div>
-                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
+                  <div className="px-2 w-full">
+                    <div className="text-[16px] font-medium opacity-70">Bonus</div>
+                    <div className="text-[22px] font-piedra text-[#343434]">
                       {platform.welcomeBonus || "-"}
                     </div>
                   </div>
-                  <div className="px-[clamp(0.5rem,1vw,1rem)] w-full">
-                    <div className="text-[clamp(0.7rem,1.5vw,1rem)] font-medium opacity-70">Special</div>
-                    <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-piedra text-[#343434]">
+                  <div className="px-2 w-full">
+                    <div className="text-[16px] font-medium opacity-70">Special</div>
+                    <div className="text-[22px] font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
                   </div>
@@ -173,18 +163,18 @@ const GamePlatforms: React.FC = () => {
                 <button 
                   onClick={() => window.open(platform.url, '_blank')}
                   className="w-full bg-[#78e63d] 
-                            text-white py-[clamp(0.5rem,1vw,0.75rem)] 
+                            text-white py-3 
                             rounded-lg font-extrabold 
-                            text-[clamp(0.9rem,2vw,1.2rem)] 
+                            text-[18px] 
                             shadow-md hover:shadow-lg 
                             hover:bg-[#4bb352]
                             transition-all duration-300 
-                            flex items-center justify-center space-x-[clamp(0.25rem,1vw,0.75rem)]"
+                            flex items-center justify-center space-x-2"
                 >
                   <img 
                     src="/cards cta/3d-dice.webp"
                     alt="CTA Icon" 
-                    className="w-[clamp(18px,3vw,28px)] h-[clamp(18px,3vw,28px)] drop-shadow-md"
+                    className="w-[28px] h-[28px] drop-shadow-md"
                   />
                   <span>Claim Now</span>
                 </button>
