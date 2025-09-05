@@ -106,18 +106,8 @@ const GamePlatforms: React.FC = () => {
             >
               {/* 上半部分 */}
               <div className="bg-[#f0f1f1] text-black py-2 px-5 grid grid-cols-3 items-center w-full">
-                {/* 左边 MIN DEPOSIT */}
-                <div className="w-full text-left">
-                  <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
-                    MIN DEPOSIT
-                  </div>
-                  <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434]">
-                    {platform.minDeposit} <span className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold">AUD</span>
-                  </div>
-                </div>
-
-                {/* 中间 LOGO */}
-                <div className="flex justify-center items-center w-full">
+                {/* 左边 LOGO */}
+                <div className="flex justify-start items-center w-full">
                   <img 
                     src={platform.logo} 
                     alt="Platform Logo" 
@@ -125,13 +115,29 @@ const GamePlatforms: React.FC = () => {
                   />
                 </div>
 
-                {/* 右边 TOTAL GAMES */}
-                <div className="w-full text-right">
-                  <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
-                    TOTAL GAMES
+                {/* 中间空白，用来占位保持结构 */}
+                <div></div>
+
+                {/* 右边 MIN DEPOSIT & TOTAL GAMES */}
+                <div className="w-full flex justify-end items-center divide-x divide-[#d1d6ce]">
+                  {/* MIN DEPOSIT */}
+                  <div className="pr-3 text-right">
+                    <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
+                      MIN DEPOSIT
+                    </div>
+                    <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434] whitespace-nowrap">
+                      {platform.minDeposit} <span className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold">AUD</span>
+                    </div>
                   </div>
-                  <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434]">
-                    {platform.totalGames}
+
+                  {/* TOTAL GAMES */}
+                  <div className="pl-3 text-right">
+                    <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
+                      TOTAL GAMES
+                    </div>
+                    <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434] whitespace-nowrap">
+                      {platform.totalGames}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -164,8 +170,6 @@ const GamePlatforms: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
-
 
                 {/* CTA Button */}
                 <button 
