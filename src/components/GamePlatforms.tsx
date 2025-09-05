@@ -125,7 +125,7 @@ const GamePlatforms: React.FC = () => {
                     <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
                       MIN DEPOSIT
                     </div>
-                    <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434] whitespace-nowrap">
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434] whitespace-nowrap">
                       {platform.minDeposit} <span className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold">AUD</span>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ const GamePlatforms: React.FC = () => {
                     <div className="text-[10px] sm:text-[11px] lg:text-[12px] font-medium opacity-70">
                       TOTAL GAMES
                     </div>
-                    <div className="text-[19px] sm:text-[21px] lg:text-[23px] font-piedra text-[#343434] whitespace-nowrap">
+                    <div className="text-[20px] sm:text-[24px] lg:text-[26px] font-piedra text-[#343434] whitespace-nowrap">
                       {platform.totalGames}
                     </div>
                   </div>
