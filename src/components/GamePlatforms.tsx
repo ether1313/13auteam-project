@@ -111,7 +111,7 @@ const GamePlatforms: React.FC = () => {
                   <img 
                     src={platform.logo} 
                     alt="Platform Logo" 
-                    className="w-[150px] h-[50px] sm:w-[200px] sm:h-[65px] lg:w-[240px] lg:h-[80px] object-contain drop-shadow-lg"
+                    className="w-[150px] h-[50px] sm:w-[200px] sm:h-[65px] lg:w-[240px] lg:h-[80px] object-contain drop-shadow-lg "
                   />
                 </div>
 
