@@ -21,7 +21,7 @@ const platforms: Platform[] = [
     totalGames: '4000+',
     registerFree: '$288',
     welcomeBonus: '70%',
-    vipFree: '',
+    vipFree: '$99.99',
     url: 'https://bugatti13.vip'
   },
   {
@@ -31,7 +31,7 @@ const platforms: Platform[] = [
     totalGames: '5000+',
     registerFree: '$399.99',
     welcomeBonus: 'BNG 50%',
-    vipFree: '',
+    vipFree: '$99.99',
     url: 'https://chanel9.net/'
   },
   {
@@ -41,7 +41,7 @@ const platforms: Platform[] = [
     totalGames: '5000+',
     registerFree: '$286.66',
     welcomeBonus: 'JILI 50%',
-    vipFree: '',
+    vipFree: '$99.99',
     url: 'https://hermes13.net/'
   },
   {
@@ -51,7 +51,7 @@ const platforms: Platform[] = [
     totalGames: '5000+',
     registerFree: '$399.99',
     welcomeBonus: 'JILI 80%',
-    vipFree: '',
+    vipFree: '$99.99',
     url: 'https://louis13.co/'
   },
   {
@@ -61,7 +61,7 @@ const platforms: Platform[] = [
     totalGames: '5000+',
     registerFree: '$400',
     welcomeBonus: 'JILI 50%',
-    vipFree: '',
+    vipFree: '$169.99',
     url: 'https://audpay.vip/'
   },
   {
@@ -71,7 +71,7 @@ const platforms: Platform[] = [
     totalGames: '5000+',
     registerFree: '$399',
     welcomeBonus: 'BNG 80%',
-    vipFree: '$3000',
+    vipFree: '$888.88',
     url: 'https://prada9.vip/'
   }
 ];
@@ -152,7 +152,7 @@ const GamePlatforms: React.FC = () => {
                     </div>
                   </div>
                   <div className="px-2 w-full">
-                    <div className="text-[12px] font-medium opacity-70">Special</div>
+                    <div className="text-[12px] font-medium opacity-70">VIP Special</div>
                     <div className="text-[20px] font-piedra text-[#343434]">
                       {platform.vipFree || "-"}
                     </div>
