@@ -264,36 +264,36 @@ const GamePlatforms: React.FC = () => {
               <div className="bg-blue-50/60 p-4 sm:p-5 text-[#0f2f66] w-full">
                 <div
                   className="
-                    grid grid-cols-[1fr_1fr_1fr] items-center text-center mb-4 w-full
+                    grid grid-cols-[1fr_1fr_1fr] items-center text-center mb-4 sm:mb-5 w-full
                     divide-x divide-blue-200
                   "
                 >
                   {/* 左 */}
-                  <div className="flex flex-col items-center px-1 sm:px-2">
-                    <div className="text-[clamp(10px,1.3vw,15px)] font-medium opacity-70">
+                  <div className="flex flex-col items-center px-1 sm:px-2 gap-1">
+                    <div className="text-[12px] sm:text-[14px] lg:text-[15px] font-medium opacity-70 leading-tight">
                       Register Free
                     </div>
-                    <div className="text-[clamp(14px,2.4vw,28px)] font-lilita text-[#0f2f66] whitespace-nowrap">
+                    <div className="text-[18px] sm:text-[26px] lg:text-[28px] font-lilita text-[#0f2f66] whitespace-nowrap leading-none">
                       {platform.registerFree}
                     </div>
                   </div>
 
                   {/* 中 */}
-                  <div className="flex flex-col items-center px-1 sm:px-2">
-                    <div className="text-[clamp(10px,1.3vw,15px)] font-medium opacity-70">
+                  <div className="flex flex-col items-center px-1 sm:px-2 gap-1">
+                    <div className="text-[12px] sm:text-[14px] lg:text-[15px] font-medium opacity-70 leading-tight">
                       Welcome Bonus
                     </div>
-                    <div className="text-[clamp(14px,2.4vw,28px)] font-lilita text-[#0f2f66] whitespace-nowrap">
+                    <div className="text-[18px] sm:text-[26px] lg:text-[28px] font-lilita text-[#0f2f66] whitespace-nowrap leading-none">
                       {platform.welcomeBonus}
                     </div>
                   </div>
 
                   {/* 右 */}
-                  <div className="flex flex-col items-center px-1 sm:px-2">
-                    <div className="text-[clamp(10px,1.3vw,15px)] font-medium opacity-70">
+                  <div className="flex flex-col items-center px-1 sm:px-2 gap-1">
+                    <div className="text-[12px] sm:text-[14px] lg:text-[15px] font-medium opacity-70 leading-tight">
                       VIP Special
                     </div>
-                    <div className="text-[clamp(14px,2.4vw,28px)] font-lilita text-[#0f2f66] whitespace-nowrap">
+                    <div className="text-[18px] sm:text-[26px] lg:text-[28px] font-lilita text-[#0f2f66] whitespace-nowrap leading-none">
                       {platform.vipFree}
                     </div>
                   </div>
