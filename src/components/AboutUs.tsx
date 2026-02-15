@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
             About TopPokiesAustralia
           </p>
           <h2 className="mt-4 text-[clamp(1.8rem,4.6vw,2.6rem)] font-bold text-[#0f2f66]">
-            Built for Trusted iGaming Partnerships
+            Built for Trusted iGaming Partnership
           </h2>
           <p className="mt-4 text-sm sm:text-base leading-relaxed text-blue-900/80">
             TopPokiesAustralia is a partnership-driven iGaming platform focused on helping players find reliable
