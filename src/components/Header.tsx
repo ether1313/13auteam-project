@@ -3,9 +3,12 @@ import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = window.location.pathname.replace(/\/$/, '');
+  const isAboutTopPokiesPage = pathname === '/about-toppokiesaustralia';
+  const walletStationsHref = isAboutTopPokiesPage ? '/#platforms' : '#platforms';
 
   const menuItems = [
-    { label: 'Wallet Stations', href: '/#platforms' },
+    { label: 'Wallet Stations', href: walletStationsHref },
     { label: 'About Us', href: '/about-toppokiesaustralia' },
   ];
 
