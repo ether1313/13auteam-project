@@ -1,0 +1,21 @@
+name: Auto Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main  # 當你 push 到 main 分支時自動觸發
+  workflow_dispatch:  # 可手動觸發部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Vercel Deployment
+        run: |
+          echo "Triggering Vercel deployment..."
+          curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+
+      - name: Log Success
+        run: |
+          echo "Workflow completed successfully at $(date)"

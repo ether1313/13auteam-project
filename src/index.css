@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+.animate-scroll-up {
+  animation: scrollUp 200s linear infinite;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3DAD9;
+  border-radius: 0.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.05); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.5s infinite ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.animate-shake {
+  animation: shake 0.6s infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* telegram蓝色固定背景 */
+.holo-blue {
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #0f2f66 100%
+  );
+}
+
+/* telegram粉色固定背景 */
+.holo-pink {
+  background: linear-gradient(
+    135deg,
+    #1d4ed8 0%,
+    #1e3a8a 100%
+  );
+}
+
+
+/* Claim Now 按钮基础样式 */
+.claim-now-btn {
+  position: relative;
+  width: 100%;
+  padding: 0.4rem 0.75rem;
+  background: #1d4ed8;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.claim-now-btn:hover {
+  background: #1e3a8a;
+  box-shadow: 0 0 20px #1d4ed899;
+}
+
+/* 闪烁粒子通用样式 */
+.claim-now-btn .sparkle {
+  position: absolute;
+  z-index: 10;
+  animation: sparkle 2s infinite;
+  pointer-events: none;
+}
+
+/* 粒子随机分布位置 */
+.claim-now-btn .sparkle-1 { top: 5%; left: 90%; animation-delay: 0.2s; }
+.claim-now-btn .sparkle-2 { top: 10%; left: 5%; animation-delay: 0.5s; }
+.claim-now-btn .sparkle-3 { top: 80%; left: 20%; animation-delay: 0.8s; }
+.claim-now-btn .sparkle-4 { top: 50%; left: 10%; animation-delay: 1.1s; }
+.claim-now-btn .sparkle-5 { top: 90%; left: 15%; animation-delay: 1.4s; }
+.claim-now-btn .sparkle-6 { top: 20%; left: 85%; animation-delay: 1.7s; }
+.claim-now-btn .sparkle-7 { top: 95%; left: 95%; animation-delay: 1.9s; }
+.claim-now-btn .sparkle-8 { top: 60%; left: 98%; animation-delay: 2.2s; }
+
+/* 闪烁动画 */
+@keyframes sparkle {
+  0%   { opacity: 0; transform: scale(0.8); }
+  50%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* CLAIM NOW 字眼跳动效果 */
+@keyframes bounceText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.animate-bounce-text {
+  animation: bounceText 0.9s ease-in-out infinite;
+}
+
+/* Games Platform的logo跳动效果 */
+@keyframes pulseLogo {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+.animate-pulse-logo {
+  animation: pulseLogo 1.5s ease-in-out infinite;
+}
+
+/* Header浮动动画 */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+/* Fintech panel effects */
+@keyframes fintechScan {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.45;
+  }
+  80% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateX(140%);
+    opacity: 0;
+  }
+}
+
+@keyframes fintechPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.22);
+  }
+}
+
+.fintech-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.fintech-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.11) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+
+.fintech-panel::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  width: 28%;
+  background: linear-gradient(100deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0.4) 50%, rgba(56, 189, 248, 0) 100%);
+  filter: blur(2px);
+  animation: fintechScan 4.8s linear infinite;
+  pointer-events: none;
+}
+
+.fintech-glow {
+  animation: fintechPulse 2.6s ease-in-out infinite;
+}
